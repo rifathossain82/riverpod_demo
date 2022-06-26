@@ -4,6 +4,8 @@ import 'package:riverpod_demo/src/provider/providerPage.dart';
 import 'package:riverpod_demo/src/stateProvider/stateProviderPage.dart';
 import 'package:riverpod_demo/src/streamProvider/streamProviderPage.dart';
 
+import 'src/combinedProvider/view/combinedProviderPage.dart';
+
 class Homepage extends StatelessWidget {
   Homepage({Key? key}) : super(key: key);
 
@@ -12,7 +14,8 @@ class Homepage extends StatelessWidget {
     'StateProvider',
     'FutureProvider',
     'StreamProvider',
-    'ScopedProvider'
+    'ScopedProvider',
+    'CombinedProvider'
   ];
 
   var pages=[
@@ -21,6 +24,7 @@ class Homepage extends StatelessWidget {
     FutureProviderPage(),
     StreamProviderPage(),
     ProviderPage(),
+    CombinedProviderPage(),
   ];
 
   @override
